@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Game</h1>
+        <p id="question">Question goes here</p>
+        <div class="choices">
+            <button class="choice" onclick="checkAnswer(this)">Choice A</button>
+            <button class="choice" onclick="checkAnswer(this)">Choice B</button>
+            <button class="choice" onclick="checkAnswer(this)">Choice C</button>
+        </div>
+        <p>Score: <span id="score">0</span></p>
+        <button id="backButton" onclick="goBack()">Back</button>
+        <button id="previousButton" onclick="goToPreviousQuestion()">Previous</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
